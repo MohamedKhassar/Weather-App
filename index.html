@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="card">
-        <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="false">
-            <button><img src="images/search.png" alt=""></button>
-        </div>
+        <form class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false" class="search-input">
+            <button class="search-btn"><img src="images/search.png" alt=""></button>
+        </form>
         <div class="weather">
             <img src="images/rain.png" class="weather-icon" alt="">
             <h1 class="temp">22°c</h1>
@@ -33,6 +33,17 @@
                 </div>
             </div>
         </div>
+    <div class="loading">
+<img src="images/refresh-cw.svg" alt="">
+    </div>
+    <div class="error">
+<span>Type a valid city</span>
+    </div>
     </div>
 </body>
+<script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+<script src="index.js"></script>
 </html>
